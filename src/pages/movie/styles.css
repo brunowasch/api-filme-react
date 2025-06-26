@@ -1,3 +1,4 @@
+/* Estilos para a barra de navegação */
 nav {
   display: flex;
   align-items: center;
@@ -5,28 +6,56 @@ nav {
   padding-top: 20px;
   padding-bottom: 30px;
 }
+
+nav img {
+  width: 60px;  
+  height: auto;
+}
+
 nav h1 {
   text-align: center;
+  color: white;
+  margin-left: 10px;  
 }
 
 .container {
   text-align: center;
 }
 
-.link_button {
-  margin-top: 5px;
-  padding: 0.7rem 3rem;
-  border: none;
-  border-radius: 15px;
-  color: #212121;
-  background-color: #ffffff;
-  font-weight: 1000;
-  font-size: 12 px;
-  cursor: pointer;
-  transition: all 250ms;
+h1 {
+  text-align: center;
 }
-.link_button:hover{
+
+h3 {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+h4 {
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.link_button {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 0.7rem 3rem;
+  border: 2px solid #00bcd4;
+  border-radius: 15px;
+  color: #00bcd4;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+.link_button:hover {
   transform: scale(1.1);
+  color: #ffffff;
+  background-color: #00bcd4;
+  border-color: #0097a7;
 }
 
 .img_movie {
@@ -37,15 +66,18 @@ nav h1 {
 .movie-desc {
   text-align: justify;
 }
+
 .descricao {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 0 30%;
 }
+
 .descricao h4 {
   font-size: 24px;
 }
+
 .descricao p {
   text-indent: 30px;
 }
