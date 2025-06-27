@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    padding: 2rem;
-    background-color: #03090F;
+    width: 100vw;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #03090F;
 
     h1 {
         text-align: center;
@@ -17,8 +19,8 @@ export const Container = styled.div`
         margin-bottom: 2rem;
         color: #ffffff;
     }
-
 `;
+
 
 export const Nav = styled.nav`
     display: flex;
@@ -184,6 +186,23 @@ export const Select = styled.select`
 
     option {
         background-color: #03090F;
+        color: #ffffff;
+    }
+`;
+
+export const Footer = styled.footer`
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #021018;
+    color: #00bcd4;
+    text-align: center;
+
+    p {
+        margin: 0;
+    }
+
+    span {
         color: #ffffff;
     }
 `;

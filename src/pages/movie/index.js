@@ -45,6 +45,9 @@ const Movie = () => {
                     <button className="link_button">Voltar</button>
                 </Link>
             </div>
+                <footer>
+                    <p>&copy; <span>MovieSearch</span> - O melhor guia de filmes da internet!</p>
+                </footer>
         </div>
     );
 };

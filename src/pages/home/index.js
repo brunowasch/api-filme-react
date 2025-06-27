@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Movie, MovieList, Btn, Select, Nav, Logo } from "./style";
+import { Container, Movie, MovieList, Btn, Select, Nav, Logo, Footer } from "./style";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -97,7 +97,7 @@ function Home() {
                     <button type="submit">Buscar</button>
                 </form>                      
             </Nav>
-            {!searchTerm && <h2>Últimos lançamentos</h2>}
+            {!searchTerm && <h2>Filmes mais assistidos</h2>}
 
             {!isLoading && movies.length === 0 && (
                 <h2>Nenhum filme encontrado</h2>
@@ -121,7 +121,10 @@ function Home() {
                     </Movie>
                 ))}
             </MovieList>
-        </Container>
+            <Footer>
+                <p>&copy; <span>MovieSearch</span> - O melhor guia de filmes da internet!</p>
+            </Footer>
+        </Container>    
     );
 }
 
