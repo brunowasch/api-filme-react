@@ -1,51 +1,37 @@
-# API DE FILMES USANDO REACTJS
+# 🎬 MovieSearch - Consumo de API com React.js
 
-Por [Diego Candido](https://diegocandido.com)
+App em React que consome uma API de filmes, exibe pôsteres e implementa estados de carregamento/erro.
 
+## ✨ Funcionalidades
+- Lista de filmes com pôster, título e gênero
+- Busca por nome e filtro por gênero
+- Estados de UI: carregando (skeleton/spinner), erro e vazio
+- Acessibilidade básica (alt em imagens, semântica)
 
-Montei esse projeto bem básico para consumir uma API Rest com lista de filmes.
+## 📸 Demonstração
 
+<img width="1869" height="947" alt="image" src="https://github.com/user-attachments/assets/4638a331-a8e6-40ca-ad0a-8c6a4f2acdea" />
 
+## 🛠️ Tecnologias utilizadas
+<p>
+  <img alt="React" title="React" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
+  <img alt="JavaScript" title="JavaScript" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+  <img alt="CSS3" title="CSS3" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+</p>
 
-## Site que fornece a API grátis: 
-```
-https://www.themoviedb.org/
-```
+## ✍️ Autor
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/brunowasch">
+        <img src="https://avatars.githubusercontent.com/brunowasch" width="100px;" alt="Bruno Waschburger Silva"/><br />
+        <sub><b>Bruno Waschburger Silva</b></sub>
+      </a>
+      <br />
+      📧 bwaschburger@gmail.com
+    </td>
+  </tr>
+</table>
 
-## Documentação Oficial do projeto:
-```
-https://www.themoviedb.org/documentation/api
-```
-
-Irá ser necessário a geração de uma chave privada nesse link:
-```
-https://www.themoviedb.org/settings/api
-```
-
-## Token no arquivo .ENV ##
-Para acessar a API Restfull do site é necessário criar um token e colocar em um arquivo .ENV na raíz do projeto. Conforme imagem abaixo:
-
-![print](https://user-images.githubusercontent.com/1766790/191596782-51cd52f4-d471-4930-9e33-d792ad4aeeb1.JPG)
-
-
-## Clonando o Repositório ##
-Com o Git e o Node.js instalado na sua maquina e a **URL** do projeto em mãos, cria em algum lugar do seu pc uma pasta para criarmos uma copia do repositório, dentro dela abra o **cmd** ou **powershell** e digite os comandos abaixo:
-```
-git clone https://github.com/diegocandido/react-filmes.git
-cd react-filmes
-npm install
-npm start
-```
-
-## Tela Inicial do projeto:
-
-![screan](https://user-images.githubusercontent.com/81689363/190420116-177e6087-c1dd-4276-bef1-1dd20e575039.PNG)
-
-
-## Tela de detalhes do filme:
-
-![details](https://user-images.githubusercontent.com/81689363/190419902-82b9ce94-3944-4bdb-ad1c-e35a93b142e1.PNG)
-
-
-
- 
+---
+*Nota: Este trabalho foi desenvolvido a partir de uma API e de uma interface inicial fornecidas pelo professor da disciplina de Design Gráfico da Escola Técnica Estadual Monteiro Lobato. No entanto, todo o redesign e a evolução visual do projeto foram realizados pelo autor.*
