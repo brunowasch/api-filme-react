@@ -74,7 +74,6 @@ function Home() {
                     <Logo src="/images/logo-site.png" alt="Logo" />
                     <h1>MovieSearch</h1>
                 </div> 
-                
                 <Select
                     aria-label="Selecione o gênero"
                     onChange={(e) => setGenreFilter(e.target.value)}
@@ -97,12 +96,13 @@ function Home() {
                     <button type="submit">Buscar</button>
                 </form>                      
             </Nav>
-            {!searchTerm && <h2>Filmes mais assistidos</h2>}
+            <div className="title" style={{padding: '0 0 0 4rem'}}>
+                {!searchTerm && <h2>Filmes mais assistidos</h2>}
 
-            {!isLoading && movies.length === 0 && (
-                <h2>Nenhum filme encontrado</h2>
-            )}
-
+                {!isLoading && movies.length === 0 && (
+                    <h2>Nenhum filme encontrado</h2>
+                )}
+            </div>
             <MovieList>
                 {movies.map((movie) => (
                     <Movie
@@ -121,6 +121,7 @@ function Home() {
                     </Movie>
                 ))}
             </MovieList>
+
             <Footer>
                 <p>&copy; <span>MovieSearch</span> - O melhor guia de filmes da internet!</p>
             </Footer>

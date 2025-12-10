@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 100vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: #03090F;
+    width: 100%;
 
     h1 {
         text-align: center;
@@ -20,6 +20,7 @@ export const Container = styled.div`
         color: #ffffff;
     }
 `;
+
 
 
 export const Nav = styled.nav`
@@ -79,14 +80,16 @@ export const Logo = styled.img`
 `;
 
 export const MovieList = styled.ul`
+    flex: 1;
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     column-gap: 3rem;
     row-gap: 4rem;
-    padding: 0;
+    padding: 2rem 4rem;
     margin: 0;
 `;
+
 
 export const Movie = styled.li`
     display: flex;
